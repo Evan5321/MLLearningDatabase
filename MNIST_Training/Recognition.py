@@ -66,7 +66,7 @@ image_display = image * std + mean
 image_display = image_display.squeeze().numpy() # 移除通道维度，并转换为numpy数组
 
 plt.imshow(image_display, cmap='gray')
-plt.title(f"真实标签: {label}")
+plt.title(f"True Label:{label}")
 plt.axis('off') # 不显示坐标轴
 plt.show()
 
